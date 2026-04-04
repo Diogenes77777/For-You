@@ -1,14 +1,15 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  overflow-x: hidden; /* Only hide horizontal scroll */
-  overflow-y: auto;   /* Allow vertical scroll if content is long */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100dvh;
-  padding: 20px;      /* Extra padding so card doesn't touch edges */
+  min-height: 100dvh; /* Dynamic height for mobile browsers */
+  padding: 20px;
   box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto; /* Allows scrolling if the letter is long */
+  background-color: #ffd6e7; /* Fallback color */
 
 }
 html, body {
@@ -20,12 +21,14 @@ html, body {
 /* 🌌 Background */
 .background {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(270deg, #ffd6e7, #ffe6f0, #fff0f5);
-  background-size: cover;
+  background-size: 400% 400%;
   animation: gradientMove 12s ease infinite;
-  z-index: -2;
+  z-index: -2; /* Keeps it behind everything */
 }
 
 @keyframes gradientMove {
