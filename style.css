@@ -6,10 +6,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100dvh;
   padding: 20px;      /* Extra padding so card doesn't touch edges */
   box-sizing: border-box;
-  
+
 }
 html, body {
   margin: 0;
@@ -66,35 +66,37 @@ html, body {
 /* 💌 Card */
 .card {
   background: white;
-  padding: 25px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-  max-width: 420px;
-  width: 100%;
+  padding: 30px 20px; /* More vertical padding */
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  max-width: 350px;    /* Slightly narrower for mobile-first look */
+  width: 85%;         /* Uses most of the screen width on small phones */
   text-align: center;
-  animation: fadeIn 0.8s ease;
+  z-index: 10;
 }
 
 /* 📱 Mobile tweaks */
 @media (max-width: 500px) {
   .card {
-    border-radius: 15px;
-    max-width: 90%;       /* limits width on mobile */
-    margin: 20px auto;    /* centers it */
-    padding: 15px;        /* adds breathing room */
-    box-sizing: border-box; 
-    overflow-wrap: break-word; /* prevents text overflow */
+    padding: 20px;
+    max-width: 100%; 
+    width: 100%;
+    margin: auto;
+  }
+
+  .letter {
+    font-size: 14px; /* Slightly smaller text for better fit */
+    line-height: 1.5;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   button {
-    margin-top: 10px;
-    width: 50px;
-    height: 50px;
-    font-size: 14px;
+    width: auto;      /* Let the button expand to fit the text */
+    min-width: 100px; /* But keep a decent minimum size */
+    padding: 10px 20px;
   }
 }
 
@@ -122,11 +124,17 @@ button:hover {
 
 /* 🎵 Music button */
 #musicBtn {
-  position: fixed;
+ position: fixed;
   top: 15px;
   right: 15px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  padding: 10px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 0;
 }
 
 /* ✨ Fade-in */
