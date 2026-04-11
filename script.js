@@ -20,7 +20,7 @@ function openLetter() {
   content.innerHTML = `
     <h2>For You</h2>
     <div class="letter fade-in">
-Marizz, there's something that I've been keeping to myself for a long time already, pero nahihiya lang ako. I started liking you ever since our Grade 11 days; at first, I thought it was just a mere happy crush. Back then, it was just a simple happy crush, nothing too serious. I even tried to move on, pero during our Gala Night where we were partners, all those feelings came flooding back. Spending more time with you helped me understand that what I have for you isn't a mere happy crush
+Marizz, there's something that I've been keeping to myself for a long time already, pero nahihiya lang ako. I started liking you ever since our Grade 11 days. Back then, it was just a simple happy crush, nothing too serious. I even tried to move on, pero during our Gala Night where we were partners, all those feelings came flooding back. Spending more time with you helped me understand that what I have for you isn't a mere happy crush
 
 In fact, I actually enjoy chatting with you and being with you. Everything feels very natural with you. I’d really like to get to know you more. I don’t expect anything from you, and it’s totally okay if you don’t feel the same way. I just wanted to be honest and let you know how I feel, kasi I think it’s better to say it than keep it to myself. I hope this won’t make things awkward, promise.
 
